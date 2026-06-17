@@ -1,0 +1,2045 @@
+{
+  "tabs": [
+    {
+      "id": "17805122708308yee",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/auth/register",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"Mina\",\n  \"email\": \"mina@test.com\",\n  \"password\": \"123456\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 201,
+        "statusText": "Created",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "84",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 20:20:18 GMT",
+          "etag": "W/\"54-IOomlcoN4asmJEgKmtOEH1JkFuU\"",
+          "keep-alive": "timeout=5",
+          "set-cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InVzZXIiLCJpYXQiOjE3ODA1MTgwMTgsImV4cCI6MTc4MDUzOTYxOH0.nvPgPGQevFOqJixYEJtaPIrjXELbASxh5v0-QUZSNb4; Max-Age=21600; Path=/; Expires=Thu, 04 Jun 2026 02:20:18 GMT; HttpOnly; SameSite=Strict",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"user\":{\"id\":1,\"name\":\"Mina\",\"email\":\"mina@test.com\",\"role\":\"user\"}}",
+        "time": 80,
+        "size": 84,
+        "actualRequest": {
+          "method": "POST",
+          "url": "http://localhost:5000/api/auth/register",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE0OTg2LCJleHAiOjE3ODA1MzY1ODZ9.g2FhdSRnfF9Z_cK29FpKRRZfOgBke-FbHgxR4U1x94k"
+          },
+          "body": "{\n  \"name\": \"Mina\",\n  \"email\": \"mina@test.com\",\n  \"password\": \"123456\"\n}",
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [
+          {
+            "name": "token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InVzZXIiLCJpYXQiOjE3ODA1MTgwMTgsImV4cCI6MTc4MDUzOTYxOH0.nvPgPGQevFOqJixYEJtaPIrjXELbASxh5v0-QUZSNb4",
+            "domain": "localhost",
+            "path": "/",
+            "expires": "2026-06-04T02:20:18.038Z",
+            "httpOnly": true,
+            "secure": false,
+            "sameSite": "Strict",
+            "createdAt": "2026-06-03T20:20:18.038Z"
+          }
+        ],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 80
+          },
+          {
+            "name": "Post-processing",
+            "duration": 1
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "1780512639198rfpm",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/auth/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"email\": \"mina@test.com\",\n  \"password\": \"123456\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "85",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 20:21:43 GMT",
+          "etag": "W/\"55-I4VOvzVUk3OgcMd12lo2NbHlBKQ\"",
+          "keep-alive": "timeout=5",
+          "set-cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0; Max-Age=21600; Path=/; Expires=Thu, 04 Jun 2026 02:21:43 GMT; HttpOnly; SameSite=Strict",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"user\":{\"id\":1,\"name\":\"Mina\",\"email\":\"mina@test.com\",\"role\":\"admin\"}}",
+        "time": 70,
+        "size": 85,
+        "actualRequest": {
+          "method": "POST",
+          "url": "http://localhost:5000/api/auth/login",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InVzZXIiLCJpYXQiOjE3ODA1MTgwMTgsImV4cCI6MTc4MDUzOTYxOH0.nvPgPGQevFOqJixYEJtaPIrjXELbASxh5v0-QUZSNb4"
+          },
+          "body": "{\n  \"email\": \"mina@test.com\",\n  \"password\": \"123456\"\n}",
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [
+          {
+            "name": "token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0",
+            "domain": "localhost",
+            "path": "/",
+            "expires": "2026-06-04T02:21:43.058Z",
+            "httpOnly": true,
+            "secure": false,
+            "sameSite": "Strict",
+            "createdAt": "2026-06-03T20:21:43.058Z"
+          }
+        ],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 70
+          },
+          {
+            "name": "Post-processing",
+            "duration": 1
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "1780514469570ve1l",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/auth/me",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "headers",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "125",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 20:21:48 GMT",
+          "etag": "W/\"7d-KxhUtRUl2RnfytslwJN0kwkU0CM\"",
+          "keep-alive": "timeout=5",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"user\":{\"id\":1,\"name\":\"Mina\",\"email\":\"mina@test.com\",\"role\":\"admin\",\"created_at\":\"2026-06-03T20:20:18.000Z\"}}",
+        "time": 7,
+        "size": 125,
+        "actualRequest": {
+          "method": "GET",
+          "url": "http://localhost:5000/api/auth/me",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0"
+          },
+          "body": null,
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 7
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "1780514947586g30c",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/auth/admin-test",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "headers",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "42",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 20:21:55 GMT",
+          "etag": "W/\"2a-5Huy1Qwo3Yr6rJS8DWgotAE9mm4\"",
+          "keep-alive": "timeout=5",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"message\":\"Welcome admin\"}",
+        "time": 6,
+        "size": 42,
+        "actualRequest": {
+          "method": "GET",
+          "url": "http://localhost:5000/api/auth/admin-test",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0"
+          },
+          "body": null,
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 6
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "1780518117116o0p6",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/events",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"title\": \"Sharmoofers\",\n  \"description\": \"Amazing Night\",\n  \"image_url\": \"https://image.com/event.jpg\",\n  \"organizer\": \"Pulse Events\",\n  \"location\": \"Cairo\",\n  \"venue_name\": \"Cairo Arena\",\n  \"venue_address\": \"Nasr City\",\n  \"event_date\": \"2026-08-01 20:00:00\",\n  \"facilities\": [\n    \"Parking\",\n    \"Food Court\",\n    \"Bathrooms\"\n  ]\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 201,
+        "statusText": "Created",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "67",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 21:08:39 GMT",
+          "etag": "W/\"43-Z9gm6WNPXww6eEe2pYKKpCojAxY\"",
+          "keep-alive": "timeout=5",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"eventId\":3,\"message\":\"Event created successfully\"}",
+        "time": 10,
+        "size": 67,
+        "actualRequest": {
+          "method": "POST",
+          "url": "http://localhost:5000/api/events",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0"
+          },
+          "body": "{\n  \"title\": \"Sharmoofers\",\n  \"description\": \"Amazing Night\",\n  \"image_url\": \"https://image.com/event.jpg\",\n  \"organizer\": \"Pulse Events\",\n  \"location\": \"Cairo\",\n  \"venue_name\": \"Cairo Arena\",\n  \"venue_address\": \"Nasr City\",\n  \"event_date\": \"2026-08-01 20:00:00\",\n  \"facilities\": [\n    \"Parking\",\n    \"Food Court\",\n    \"Bathrooms\"\n  ]\n}",
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 10
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "17805182107427kfz",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/events/2",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "headers",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "372",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 21:08:48 GMT",
+          "etag": "W/\"174-bBkCRsgW9zW7XMnvFoinRi7gNWw\"",
+          "keep-alive": "timeout=5",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"event\":{\"id\":2,\"title\":\"Sharmoofers\",\"description\":\"Amazing Night\",\"image_url\":\"https://image.com/event.jpg\",\"organizer\":\"Pulse Events\",\"location\":\"Cairo\",\"venue_name\":\"Cairo Arena\",\"venue_address\":\"Nasr City\",\"event_date\":\"2026-08-01T17:00:00.000Z\",\"facilities\":[\"Parking\",\"Food Court\",\"Bathrooms\"],\"is_active\":1,\"created_at\":\"2026-06-03T21:08:22.000Z\"}}",
+        "time": 6,
+        "size": 372,
+        "actualRequest": {
+          "method": "GET",
+          "url": "http://localhost:5000/api/events/2",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0"
+          },
+          "body": null,
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 6
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "17805204554284lnz",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "PUT",
+      "url": "http://localhost:5000/api/events/1",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"title\": \"sharmoofers\",\n  \"description\": \"Amazing Night\",\n  \"image_url\": \"https://image.com/event.jpg\",\n  \"organizer\": \"Pulse Events\",\n  \"location\": \"Cairo\",\n  \"venue_name\": \"Cairo Arena\",\n  \"venue_address\": \"Nasr City\",\n  \"event_date\": \"2026-08-01 20:00:00\",\n  \"facilities\": [\n    \"Parking\",\n    \"Food Court\",\n    \"Bathrooms\"\n  ]\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "55",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 21:02:34 GMT",
+          "etag": "W/\"37-g3Ebwes/MACWooH7i+jqmx+bxKE\"",
+          "keep-alive": "timeout=5",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"message\":\"Event updated successfully\"}",
+        "time": 21,
+        "size": 55,
+        "actualRequest": {
+          "method": "PUT",
+          "url": "http://localhost:5000/api/events/1",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0"
+          },
+          "body": "{\n  \"title\": \"sharmoofers\",\n  \"description\": \"Amazing Night\",\n  \"image_url\": \"https://image.com/event.jpg\",\n  \"organizer\": \"Pulse Events\",\n  \"location\": \"Cairo\",\n  \"venue_name\": \"Cairo Arena\",\n  \"venue_address\": \"Nasr City\",\n  \"event_date\": \"2026-08-01 20:00:00\",\n  \"facilities\": [\n    \"Parking\",\n    \"Food Court\",\n    \"Bathrooms\"\n  ]\n}",
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 11
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 21
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "1780520566559c6vw",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "DELETE",
+      "url": "http://localhost:5000/api/events/3",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "headers",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "55",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 21:09:02 GMT",
+          "etag": "W/\"37-Qo9mb78Y7s+pUu+WpmJap/uNXdc\"",
+          "keep-alive": "timeout=5",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"message\":\"Event deleted successfully\"}",
+        "time": 14,
+        "size": 55,
+        "actualRequest": {
+          "method": "DELETE",
+          "url": "http://localhost:5000/api/events/3",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0"
+          },
+          "body": null,
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 14
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "1780520959363ntgl",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/ticket-types",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"event_id\": 2,\n  \"name\": \"Backstage\",\n  \"price\": 2500,\n  \"quantity\": 50\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 201,
+        "statusText": "Created",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "78",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 21:11:10 GMT",
+          "etag": "W/\"4e-CogEU82+E7Sf1G43+Z8tICniaHI\"",
+          "keep-alive": "timeout=5",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"ticketTypeId\":2,\"message\":\"Ticket type created successfully\"}",
+        "time": 10,
+        "size": 78,
+        "actualRequest": {
+          "method": "POST",
+          "url": "http://localhost:5000/api/ticket-types",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0"
+          },
+          "body": "{\n  \"event_id\": 2,\n  \"name\": \"Backstage\",\n  \"price\": 2500,\n  \"quantity\": 50\n}",
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 10
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "17805211039286lgf",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/ticket-types/event/2",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "headers",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "281",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 21:49:04 GMT",
+          "etag": "W/\"119-h84sLwXQD5tdfSjtZiO61LpmEzo\"",
+          "keep-alive": "timeout=5",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"count\":2,\"ticketTypes\":[{\"id\":1,\"event_id\":2,\"name\":\"VIP\",\"price\":\"1200.00\",\"quantity\":100,\"sold\":0,\"created_at\":\"2026-06-03T21:10:37.000Z\"},{\"id\":2,\"event_id\":2,\"name\":\"Backstage\",\"price\":\"2500.00\",\"quantity\":50,\"sold\":0,\"created_at\":\"2026-06-03T21:11:10.000Z\"}]}",
+        "time": 6,
+        "size": 281,
+        "actualRequest": {
+          "method": "GET",
+          "url": "http://localhost:5000/api/ticket-types/event/2",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0"
+          },
+          "body": null,
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 6
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "1780521778316ce9x",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/bookings",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"ticket_type_id\": 1,\n  \"quantity\": 2\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 201,
+        "statusText": "Created",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "49",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 21:24:02 GMT",
+          "etag": "W/\"31-ON6W2+lAUO2cnaFbQg1PzAylbcc\"",
+          "keep-alive": "timeout=5",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"bookingId\":1,\"status\":\"pending\"}",
+        "time": 24,
+        "size": 49,
+        "actualRequest": {
+          "method": "POST",
+          "url": "http://localhost:5000/api/bookings",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0"
+          },
+          "body": "{\n  \"ticket_type_id\": 1,\n  \"quantity\": 2\n}",
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 24
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "1780521873728inlz",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/bookings/my-bookings",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "headers",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "250",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 21:49:25 GMT",
+          "etag": "W/\"fa-e8f+JvtSUMywllLBHhVI3Gv0S+4\"",
+          "keep-alive": "timeout=5",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"bookings\":[{\"id\":1,\"user_id\":1,\"ticket_type_id\":1,\"quantity\":2,\"total_price\":\"2400.00\",\"status\":\"pending\",\"admin_note\":null,\"approved_at\":null,\"created_at\":\"2026-06-03T21:24:02.000Z\",\"ticket_name\":\"VIP\",\"event_title\":\"Sharmoofers\"}]}",
+        "time": 7,
+        "size": 250,
+        "actualRequest": {
+          "method": "GET",
+          "url": "http://localhost:5000/api/bookings/my-bookings",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0"
+          },
+          "body": null,
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 7
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "1780523109200bybs",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/bookings/pending",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "headers",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "293",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 21:49:35 GMT",
+          "etag": "W/\"125-y1DMJhHJTS1kWQLOvgm6ZQ2q0q8\"",
+          "keep-alive": "timeout=5",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"bookings\":[{\"id\":1,\"user_id\":1,\"ticket_type_id\":1,\"quantity\":2,\"total_price\":\"2400.00\",\"status\":\"pending\",\"admin_note\":null,\"approved_at\":null,\"created_at\":\"2026-06-03T21:24:02.000Z\",\"user_name\":\"Mina\",\"email\":\"mina@test.com\",\"ticket_name\":\"VIP\",\"event_title\":\"Sharmoofers\"}]}",
+        "time": 5,
+        "size": 293,
+        "actualRequest": {
+          "method": "GET",
+          "url": "http://localhost:5000/api/bookings/pending",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0"
+          },
+          "body": null,
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 5
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "1780523168494hr3y",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "PUT",
+      "url": "http://localhost:5000/api/bookings/1/approve",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "45",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 21:49:59 GMT",
+          "etag": "W/\"2d-dvItUfk8qp7UalHWeJebi6NcKC8\"",
+          "keep-alive": "timeout=5",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"message\":\"Booking approved\"}",
+        "time": 14,
+        "size": 45,
+        "actualRequest": {
+          "method": "PUT",
+          "url": "http://localhost:5000/api/bookings/1/approve",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0"
+          },
+          "body": "",
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 14
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "1780523437597vz1y",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/bookings/my-bookings",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "headers",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "273",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 21:50:42 GMT",
+          "etag": "W/\"111-0hw80hYAtRPmD7qZNN4trPs8q2Q\"",
+          "keep-alive": "timeout=5",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"bookings\":[{\"id\":1,\"user_id\":1,\"ticket_type_id\":1,\"quantity\":2,\"total_price\":\"2400.00\",\"status\":\"approved\",\"admin_note\":null,\"approved_at\":\"2026-06-03T21:49:59.000Z\",\"created_at\":\"2026-06-03T21:24:02.000Z\",\"ticket_name\":\"VIP\",\"event_title\":\"Sharmoofers\"}]}",
+        "time": 6,
+        "size": 273,
+        "actualRequest": {
+          "method": "GET",
+          "url": "http://localhost:5000/api/bookings/my-bookings",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0"
+          },
+          "body": null,
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 6
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "17805234622265xk5",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/ticket-types/event/2",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "headers",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "281",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 21:51:09 GMT",
+          "etag": "W/\"119-HHsSb3U++arL6CfSMQ2Mtm+GB7M\"",
+          "keep-alive": "timeout=5",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"count\":2,\"ticketTypes\":[{\"id\":1,\"event_id\":2,\"name\":\"VIP\",\"price\":\"1200.00\",\"quantity\":100,\"sold\":2,\"created_at\":\"2026-06-03T21:10:37.000Z\"},{\"id\":2,\"event_id\":2,\"name\":\"Backstage\",\"price\":\"2500.00\",\"quantity\":50,\"sold\":0,\"created_at\":\"2026-06-03T21:11:10.000Z\"}]}",
+        "time": 6,
+        "size": 281,
+        "actualRequest": {
+          "method": "GET",
+          "url": "http://localhost:5000/api/ticket-types/event/2",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0"
+          },
+          "body": null,
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 6
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "1780523772797c33h",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/dashboard/stats",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "headers",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "136",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 21:56:42 GMT",
+          "etag": "W/\"88-of1dxHS/y0E1FMl4HmWp706HXlM\"",
+          "keep-alive": "timeout=5",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"stats\":{\"totalUsers\":1,\"totalEvents\":1,\"totalBookings\":1,\"pendingBookings\":0,\"approvedBookings\":1,\"revenue\":\"2400.00\"}}",
+        "time": 24,
+        "size": 136,
+        "actualRequest": {
+          "method": "GET",
+          "url": "http://localhost:5000/api/dashboard/stats",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0"
+          },
+          "body": null,
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 24
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "178053104144205fk",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "headers",
+      "responseTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "47",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 23:57:26 GMT",
+          "etag": "W/\"2f-u5eRYU0RABt95biexIGghGg0+Og\"",
+          "keep-alive": "timeout=5",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"message\":\"Backend is running\"}",
+        "time": 16,
+        "size": 47,
+        "actualRequest": {
+          "method": "GET",
+          "url": "http://localhost:5000/",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0"
+          },
+          "body": null,
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 16
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "grpcMessages": [],
+      "grpcConfig": null,
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local"
+    },
+    {
+      "id": "1780531124291oacw",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/events",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "headers",
+      "responseTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:5173",
+          "connection": "keep-alive",
+          "content-length": "385",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Wed, 03 Jun 2026 23:58:49 GMT",
+          "etag": "W/\"181-AvIWY6u+UFwcP2n7cuv9K58XrGs\"",
+          "keep-alive": "timeout=5",
+          "vary": "Origin",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"success\":true,\"count\":1,\"events\":[{\"id\":2,\"title\":\"Sharmoofers\",\"description\":\"Amazing Night\",\"image_url\":\"https://image.com/event.jpg\",\"organizer\":\"Pulse Events\",\"location\":\"Cairo\",\"venue_name\":\"Cairo Arena\",\"venue_address\":\"Nasr City\",\"event_date\":\"2026-08-01T17:00:00.000Z\",\"facilities\":[\"Parking\",\"Food Court\",\"Bathrooms\"],\"is_active\":1,\"created_at\":\"2026-06-03T21:08:22.000Z\"}]}",
+        "time": 10,
+        "size": 385,
+        "actualRequest": {
+          "method": "GET",
+          "url": "http://localhost:5000/api/events",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Cookie": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0"
+          },
+          "body": null,
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 10
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "grpcMessages": [],
+      "grpcConfig": null,
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local"
+    }
+  ],
+  "groups": [],
+  "activeTabId": "1780531124291oacw",
+  "currentView": "requests",
+  "sidebarTab": "collections",
+  "sidebarCollapsed": true,
+  "responseTab": "body",
+  "layoutMode": "horizontal",
+  "splitRatio": 0.5,
+  "horizontalSplitRatio": 0.45584479602100025,
+  "selectedMockServerId": null
+}

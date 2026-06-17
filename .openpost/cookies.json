@@ -1,0 +1,13 @@
+[
+  {
+    "name": "token",
+    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgwNTE4MTAzLCJleHAiOjE3ODA1Mzk3MDN9.AnareTnDvu1H22Q0bs2a184GAgqmis_DghLom414Te0",
+    "domain": "localhost",
+    "path": "/",
+    "expires": "2026-06-04T02:21:43.058Z",
+    "httpOnly": true,
+    "secure": false,
+    "sameSite": "Strict",
+    "createdAt": "2026-06-03T20:21:43.058Z"
+  }
+]

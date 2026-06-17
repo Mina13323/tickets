@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: 'Pliant', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Pliant', sans-serif;
+  
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  --color-nile-blue: #0F4C75;
+  --color-egyptian-gold: #D4AF37;
+  --color-warm-sand: #EAD7B7;
+  --color-copper: #B87333;
+  --color-deep-charcoal: #0D0D0D;
+  --color-soft-sand: #F5E6CA;
+
+  --color-background: var(--color-deep-charcoal);
+  --color-foreground: var(--color-soft-sand);
+  
+  --color-card: #252525;
+  --color-card-foreground: var(--color-soft-sand);
+  
+  --color-popover: #252525;
+  --color-popover-foreground: var(--color-soft-sand);
+  
+  --color-primary: var(--color-egyptian-gold);
+  --color-primary-foreground: var(--color-deep-charcoal);
+  
+  --color-secondary: var(--color-nile-blue);
+  --color-secondary-foreground: var(--color-soft-sand);
+  
+  --color-muted: #2d2d2d;
+  --color-muted-foreground: #a0a0a0;
+  
+  --color-accent: var(--color-papyrus-beige);
+  --color-accent-foreground: var(--color-deep-charcoal);
+  
+  --color-destructive: hsl(0 84% 60%);
+  --color-destructive-foreground: hsl(0 0% 98%);
+  
+  --color-border: #333333;
+  --color-input: #333333;
+  --color-ring: var(--color-egyptian-gold);
+}
+
+:root {
+  --radius: 0.625rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground overflow-x-hidden cursor-none;
+  }
+  a, button {
+    @apply cursor-none;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+  html {
+    @apply font-sans;
+  }
+  
+  ::selection {
+    @apply bg-primary/30 text-primary;
+  }
+
+  /* Hide scrollbar globally */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+/* Custom Utilities for cinematic feel */
+@layer utilities {
+  .text-shadow-cinematic {
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 0 2px 4px rgba(0,0,0, 0.4);
+  }
+  
+  .bg-glass {
+    @apply bg-black/40 backdrop-blur-md border border-white/10;
+  }
+  
+  .mask-perforated {
+    mask-image: radial-gradient(circle at 10px 50%, transparent 10px, black 11px);
+    mask-position: -10px 0;
+    mask-size: 100% 100%;
+  }
+}
